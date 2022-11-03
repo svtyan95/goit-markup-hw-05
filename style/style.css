@@ -139,6 +139,8 @@ button {
   letter-spacing: 0.02em;
   color: var(--nav-studio-portfolio-contact);
   text-decoration: inherit;
+  /* outline: 3px solid red; */
+  position: relative;
 }
 
 .nav-menu-items:hover,
@@ -157,23 +159,23 @@ button {
   justify-content: center;
 }
 
-.current::before {
+.nav-menu-items.current::after {
   background-color: var(--blue-bg-button);
   position: absolute;
-  display: inline-block;
+  display: block;
   content: "";
   height: 4px;
   border-radius: 2px;
 }
 
-.current-studio::before {
-  bottom: -2%;
-  width: 48px;
+.current-studio::after {
+  top: calc(100% - 3px);
+  width: 100%;
 }
 
-.current-portfolio::before {
-  bottom: 0;
-  width: 78px;
+.current-portfolio::after {
+  top: calc(100% - 4px);
+  width: 100%;
 }
 
 /* address and email everywhere on both pages studio and portfolio */
@@ -304,7 +306,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: chocolate;
+  background-color: rgba(0, 0, 0, 0.02);
 } */
 
 .main-header-button {
