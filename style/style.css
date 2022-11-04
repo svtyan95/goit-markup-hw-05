@@ -751,7 +751,8 @@ footer {
   background-color: rgba(33, 150, 243, 0.9);
   overflow: visible;
   /* transform: translateX(0%); */
-  transition: 9s cubic-bezier(0.9, 4, 5.2, 1);
+  /* transition: 9s cubic-bezier(0.9, 4, 5.2, 1); */
+  /* transition: opacity 3s cubik, visibility 250ms cubik; */
 }
 
 /* .picture-sets::before {
