@@ -303,28 +303,34 @@ button {
 }
 
 .modal {
+  position: ;
   width: 528px;
   height: 581px;
-  background-color: var(--web-hover-button-up-down);
+  background-color: var(--main-white-color-h);
   position: absolute;
   border-radius: 4px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background: var(--main-white-color-h);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.backdrop .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.modal-hero-icon {
 }
 
 .main-header-button {
