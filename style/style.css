@@ -303,7 +303,6 @@ button {
 }
 
 .modal {
-  position: ;
   width: 528px;
   height: 581px;
   background-color: var(--main-white-color-h);
@@ -313,11 +312,11 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .btn-close {
+  content: "";
   position: absolute;
   top: 8px;
   right: 8px;
@@ -325,12 +324,8 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background: var(--main-white-color-h);
+  /* background: var(--main-white-color-h); */
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.modal-hero-icon {
 }
 
 .main-header-button {
