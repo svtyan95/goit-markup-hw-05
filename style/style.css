@@ -305,7 +305,7 @@ button {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--main-white-color-h);
   position: absolute;
   border-radius: 4px;
   top: 50%;
