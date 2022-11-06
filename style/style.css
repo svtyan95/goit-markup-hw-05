@@ -24,6 +24,7 @@
   /* TRANSITION PROPERTIES */
 
   --transition--250ms--: 250ms;
+  --cubic-bezier--: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MAIN STYLES */
@@ -133,6 +134,9 @@ button {
   padding-bottom: 33px;
   display: inline-block;
   border-bottom: red;
+  transition: color, fill;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 /* STUDIO | PORTFOLIO | CONTACT */
@@ -145,13 +149,14 @@ button {
   text-decoration: inherit;
   /* outline: 3px solid red; */
   position: relative;
+  transition: color, fill;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .nav-menu-items:hover,
 .nav-menu-items:focus {
   color: var(--blue-bg-button);
-  transition-property: color;
-  transition-duration: var(--transition--250ms--);
 }
 
 /* current */
@@ -216,6 +221,9 @@ button {
   flex-direction: row-reverse;
   fill: var(--nav-address-email-phone-p-);
   align-items: center;
+  transition: color, fill;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 /* DOWN EMAILS AND PHONE  */
@@ -234,8 +242,6 @@ button {
 .nav-menu-items-info-top:focus {
   color: var(--blue-bg-button);
   fill: var(--header-button-active);
-  transition-property: color, fill;
-  transition-duration: var(--transition--250ms--);
 }
 
 .nav-menu-items-map {
@@ -245,13 +251,14 @@ button {
   color: var(--main-white-color-h);
   text-decoration: inherit;
   font-style: normal;
+  transition: color, fill;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .nav-menu-items-map:hover,
 .nav-menu-items-map:focus {
   color: var(--blue-bg-button);
-  transition-property: color;
-  transition-duration: var(--transition--250ms--);
 }
 
 /* HIDDEN SECTION FOR CEO OPTIMIZATION */
@@ -306,17 +313,20 @@ button {
 
 /* MODAL SECTION  */
 
-/* .backdrop {
+.backdrop {
   background-color: var(--main-white-color-h);
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-} */
+  transition: visibility, opacity;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
+}
 
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: visibility, opacity;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .modal {
@@ -554,14 +564,15 @@ ul {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
+  transition: background-color, fill;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .icon-ellipse:hover,
 .icon-ellipse:focus {
   background-color: var(--web-hover-button-up-down);
   fill: var(--main-white-color-h);
-  transition-property: background-color, fill;
-  transition-duration: var(--transition--250ms--);
 }
 
 .icons-team-propertys {
@@ -674,6 +685,9 @@ footer {
   border-radius: 4px;
   color: var(--nav-studio-portfolio-contact);
   background-color: var(--portfolio-bottons-color);
+  transition: background-color, color;
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .sort-btn:hover,
@@ -687,8 +701,6 @@ footer {
 .sort-btn:focus {
   background-color: var(--web-hover-button-up-down);
   color: var(--main-white-color-h);
-  transition-property: background-color, color;
-  transition-duration: var(--transition--250ms--);
 }
 
 /* gallery photos */
@@ -750,6 +762,8 @@ footer {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .sort-btn {
@@ -780,6 +794,9 @@ footer {
   height: 100%;
   transform: translateY(102%);
   background-color: rgba(33, 150, 243, 0.9);
+
+  transition-duration: var(--transition--250ms--);
+  transition-timing-function: var(--cubic-bezier--);
 }
 
 .card-item:hover .overlay,
