@@ -334,7 +334,7 @@ button {
   width: 528px;
   height: 581px;
   background-color: var(--main-white-color-h);
-  position: absolute;
+  position: fixed;
   border-radius: 4px;
   top: 50%;
   left: 50%;
@@ -805,5 +805,9 @@ footer {
 }
 
 .gallery-link:hover .overlay {
+  transform: translateY(0%);
+}
+
+.gallery-link:focus .overlay {
   transform: translateY(0%);
 }
