@@ -607,6 +607,8 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+  transition-property: border-color, color;
+  transition-duration: var(--transition--250ms--);
 }
 
 .icons-customers {
@@ -617,8 +619,7 @@ ul {
 .customers-link:focus {
   border-color: var(--blue-bg-button);
   color: var(--blue-bg-button);
-  transition-property: border-color, color;
-  transition-duration: var(--transition--250ms--);
+
 }
 
 /* footer of web page */
